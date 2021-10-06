@@ -1,0 +1,103 @@
+.Location {
+  position: relative;
+  min-height: 100vh;
+  background-color: white;
+  :global {
+    .back {
+      position: relative;
+      width: 100%;
+      min-height: 50vh;
+      z-index: 1;
+      animation: 1s ease 0s 1 normal both running flipInY;
+    }
+    .btm {
+      position: relative;
+      top: -5px;
+      text-align: center;
+    }
+    .info {
+      position: relative;
+      z-index: 2;
+      top: -28px;
+      margin: 0 30px;
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      background: white;
+      .welcome {
+        position: absolute;
+        top: -45px;
+        width: 100px;
+      }
+      .address-block {
+        padding: 55px 0 0;
+      }
+      .wel {
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .detail {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        font-family: 'special';
+      }
+      .navigation {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        .go {
+          height: 16px;
+          line-height: 16px;
+          // font-size: 10px;
+          transform: scale(.8);
+          color: #ff5722;
+        }
+      }
+      .map-icon {
+        height: 35px;
+        width: 35px;
+        display: block;
+      }
+    }
+    .map {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+    .shadow-welcome {
+      position: absolute;
+      top: 260px;
+      left: 35px;
+      right: 35px;
+      height: 140px;
+      padding: 10px;
+      z-index: 99;
+      border-radius: 15px;
+      background-color: rgba(0,0,0, .65);
+      opacity: 0;
+      transition: opacity 1s ease-in;
+      &.display {
+        opacity: 1;
+      }
+      .inline-block {
+        height: 100%;
+        border: 2PX solid #999;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      p {
+        &:first-child {
+          padding-top: 10px;
+        }
+        width: 100%;
+        line-height: 30px;
+        color: white;
+        font-family: 'special';
+        text-align: center;
+      }
+    }
+  }
+}

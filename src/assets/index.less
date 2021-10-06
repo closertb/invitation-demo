@@ -1,0 +1,54 @@
+.homePage {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url('./mark.png') no-repeat;
+  background-size: 100% auto;
+  :global {
+    .invite-block {
+      position: relative;
+      z-index: 1;
+      height: 30vh;
+      width: 100%;
+      margin-top: 5vh;
+      // padding: 25px 0;
+      text-align: center;
+      background: white;
+    }
+    .background {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+    }
+    .top {
+      top: 0;
+    }
+    .bottom {
+      bottom: 0;
+    }
+    .welcome-icon {
+      width: 55px;
+      padding-top: 5px;
+    }
+    .title {
+      padding-left: 14px;
+      font-size: 18px;
+      letter-spacing: 18px;
+    }
+    .sub-title {
+      padding-left: 14px;
+      margin-bottom: 5px;
+      font-size: 24px;
+      letter-spacing: 18px;
+     }
+    .major {
+      margin: 8px 0;
+      font-size: 18px;
+      font-family: "special";
+    }
+    .mini-title {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.Bridge {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  :global {
+    .mid-block {
+      margin: 0 25px;
+      padding: 8px;
+      background-color: white;
+      .photo {
+        width: 100%;
+        min-height: 50vh;
+        animation: 1s ease 0s 1 normal both running flipInY;
+      }
+      p {
+        font-family: "special";
+        padding: 8px 0 5px;
+      }
+      .tips {
+        padding: 0;
+        letter-spacing: 2px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+    }
+    .bravo {
+      position: relative;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.9);
+      &.top {
+        // top: 30px;
+        right: 15px;
+        margin-bottom: 30px;
+        font-size: 10px;
+        text-align: right;
+      }
+      &.bottom {
+        left: 20px;
+        margin-top: 30px;
+        text-align: left;
+      }
+    }
+  }
+}

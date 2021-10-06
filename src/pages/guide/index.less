@@ -1,0 +1,36 @@
+.Guide {
+  min-height: 100vh;
+  background-color: white;
+  font-family: 'special';
+  background-image: url('https://doddle.oss-cn-beijing.aliyuncs.com/wedding/backBtm.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position-y: bottom;
+  :global {
+    .block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      &.top {
+        background: url('https://doddle.oss-cn-beijing.aliyuncs.com/wedding/backTop.jpeg') no-repeat;
+        background-size: 100% auto;
+        min-height: 50vh;
+        padding-top: 5vh;
+      }
+      &.bottom {
+        justify-content: flex-end;
+        padding-bottom: 5vh;
+      }
+      p {
+        height: 24px;
+        line-height: 24px;
+      }
+    }
+    .pic {
+      width: 50vw;
+      margin: 20px;
+      border-radius: 10px;
+      animation: 1s ease 0s 1 normal both running flipInY;
+    }
+  }
+}
