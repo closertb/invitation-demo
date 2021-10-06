@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@doddle/doddle-build": "^1.4.0",
+    "@doddle/doddle-build": "^2.0.0",
     "postcss": "^8.1.1",
     "postcss-loader": "^4.0.4",
     "postcss-px-to-viewport": "^1.1.1"
